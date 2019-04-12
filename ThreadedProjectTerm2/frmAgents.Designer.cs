@@ -406,7 +406,7 @@
             this.Controls.Add(this.AgentsPanel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAgents";
-            this.Text = "frmAgents";
+            this.Text = "Agents";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAgents_FormClosed);
             this.Load += new System.EventHandler(this.frmAgents_Load);
             ((System.ComponentModel.ISupportInitialize)(this.agentBindingSource)).EndInit();

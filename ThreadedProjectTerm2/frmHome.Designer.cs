@@ -237,7 +237,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.Opacity = 0.5D;
-            this.Text = "frmHome";
+            this.Text = "Home";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmHome_FormClosed);
             this.Load += new System.EventHandler(this.frmHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bgHolder)).EndInit();

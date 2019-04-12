@@ -40,7 +40,7 @@ namespace ThreadedProjectTerm2
         public frmSuppliers activeFrmSuppliers = null;  //active instance of frmSuppliers
         public frmAgents activeFrmAgents= null;         //active instance of frmAgents
 
-
+        //get value of screen size for home page image
         public frmMain()
         {
             InitializeComponent();

@@ -93,6 +93,7 @@
             this.dataGridViewTextBoxColumn1.FillWeight = 90F;
             this.dataGridViewTextBoxColumn1.HeaderText = "Supplier ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Width = 90;
             // 
             // dataGridViewTextBoxColumn2
@@ -102,6 +103,7 @@
             this.dataGridViewTextBoxColumn2.FillWeight = 80F;
             this.dataGridViewTextBoxColumn2.HeaderText = "Supplier Name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // panel1
             // 
@@ -183,7 +185,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSuppliers";
-            this.Text = "frmSuppliers";
+            this.Text = "Suppliers";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSuppliers_FormClosed);
             this.Load += new System.EventHandler(this.frmSuppliers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.supplierBindingSource)).EndInit();
