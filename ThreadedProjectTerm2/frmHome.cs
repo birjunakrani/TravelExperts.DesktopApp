@@ -17,10 +17,14 @@ namespace ThreadedProjectTerm2
             InitializeComponent();
         }
 
+        //upon form close, checks if it is the "active" form for this form object type.  
+        //if yes, sets active form value for this form type to null
+        //this is used to manage limiting the number of instances of each of the main forms to just one
+        //see frmMain for more information
         private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (this == activeFrmMain.activeFrmHome)
-                activeFrmMain.activeFrmPackages = null;
+                activeFrmMain.activeFrmHome = null;
         }
 
         //scrolling background

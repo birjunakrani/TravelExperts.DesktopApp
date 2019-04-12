@@ -40,10 +40,14 @@ namespace ThreadedProjectTerm2
             supplierDataGridView.DataSource = suppliers;
         }
 
+        //upon form close, checks if it is the "active" form for this form object type.  
+        //if yes, sets active form value for this form type to null
+        //this is used to manage limiting the number of instances of each of the main forms to just one
+        //see frmMain for more information
         private void frmSuppliers_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (this == activeFrmMain.activeFrmSuppliers)
-                activeFrmMain.activeFrmPackages = null;
+                activeFrmMain.activeFrmSuppliers = null;
         }
 
 

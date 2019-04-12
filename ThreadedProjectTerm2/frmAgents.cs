@@ -53,10 +53,13 @@ namespace ThreadedProjectTerm2
             agencyIDComboBox.DataSource = agencies;
         }
 
+        //upon form close, checks if it is the "active" form.  if yes, set active form values to null
+        //this is used to manage limiting the number of instances of each of the main forms to just one
+        //see frmMain for more information
         private void frmAgents_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (this == activeFrmMain.activeFrmAgents)
-                activeFrmMain.activeFrmPackages = null;
+                activeFrmMain.activeFrmAgents = null;
         }
 
         //adds an agent
