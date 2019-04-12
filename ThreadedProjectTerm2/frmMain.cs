@@ -19,20 +19,28 @@ namespace ThreadedProjectTerm2
         ///       and child form tranisitions
         ///     - provides code for menu buttons 
         ///     - loads the home page (frmHome) 
+        ///     - supports logic to ensure that only one instance of each type of form 
+        ///       is loaded at a given time (i.e. to avoid multiple versions of the same 
+        ///       form)
         ///     
         /// Author: Stuart Peters (parent/child form management)
         ///         
         /// </summary>
         
-        //form level variables that are set when a child opens and 
-        //are used to track/test if a child form is open to 
-        //avoid opening duplicate versions of each form when menu buttons are clicked 
+        //form level variables that are set when a child form of a given type opens  
+        //these objects are used to test if a child form is already open when a menu item is clicked
+        //if child form is open (i.e. activeFrm[Name] != null), then application shows that form
+        //if child form is not already open, a new instance of the form is created and the activeFrm[type]
+        //is set to that form instance
+        //this avoids opening duplicate versions of each form when menu buttons are clicked 
         
-        public frmHome activeFrmHome = null;
-        public frmPackages activeFrmPackages = null;
-        public frmProducts activeFrmProducts = null;
-        public frmSuppliers activeFrmSuppliers = null;
-        public frmAgents activeFrmAgents= null;
+        public frmHome activeFrmHome = null;             //active instance of frmHome
+        public frmPackages activeFrmPackages = null;    //active instance of frmPackages
+        public frmProducts activeFrmProducts = null;    //active instance of frmProducts
+        public frmSuppliers activeFrmSuppliers = null;  //active instance of frmSuppliers
+        public frmAgents activeFrmAgents= null;         //active instance of frmAgents
+
+
         public frmMain()
         {
             InitializeComponent();
@@ -44,6 +52,9 @@ namespace ThreadedProjectTerm2
             this.MinimumSize = new System.Drawing.Size(x, y);
         }
 
+        //test if an instance of frmHome is open.  
+        //  - If false, creates new instance of frmHome
+        //  - if true, brings frmHome to front
         private void btnHome_Click(object sender, EventArgs e)
         {
             if (activeFrmHome == null)
@@ -62,6 +73,9 @@ namespace ThreadedProjectTerm2
             }
         }
 
+        //test if an instance of frmPackages is open.  
+        //  - If false, creates new instance of frmHome
+        //  - if true, brings frmPackages to front
         private void btnPackages_Click(object sender, EventArgs e)
         {
             if (activeFrmPackages == null)
@@ -81,6 +95,10 @@ namespace ThreadedProjectTerm2
 
         }
 
+
+        //test if an instance of frmProducts is open.  
+        //  - If false, creates new instance of frmHome
+        //  - if true, brings frmProducts to front
         private void btnProducts_Click(object sender, EventArgs e)
         {
             if (activeFrmProducts == null)
@@ -99,6 +117,10 @@ namespace ThreadedProjectTerm2
             }
         }
 
+
+        //test if an instance of frmSuppliers is open.  
+        //  - If false, creates new instance of frmHome
+        //  - if true, brings frmSuppliers to front
         private void btnSuppliers_Click(object sender, EventArgs e)
         {
             if (activeFrmSuppliers == null)
@@ -117,6 +139,10 @@ namespace ThreadedProjectTerm2
             }
         }
 
+
+        //test if an instance of frmAgents is open.  
+        //  - If false, creates new instance of frmHome
+        //  - if true, brings frmAgents to front
         private void btnAgents_Click(object sender, EventArgs e)
         {
             if (activeFrmAgents == null)
@@ -135,10 +161,16 @@ namespace ThreadedProjectTerm2
             }
         }
 
+
+        //exits the application
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        //loads the main form at start up, 
+        //loads frmHome as the first form, and sets activeFrmHome to this instance
+        //sets properties of frmHome instance
 
         private void frmMain_Load(object sender, EventArgs e)
         {
