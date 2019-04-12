@@ -10,8 +10,13 @@ namespace ThreadedProjectTerm2
 {
     class TransparentPanel : Panel
     {
-
-    public TransparentPanel()
+        /**
+        * Threaded project 2 - Team 1
+        * Purpose: Transparent panel object used for scrolling image in in frmHome
+        * Made by: Brent Ward
+        * Date: Marth 30th 2019
+        * **/
+        public TransparentPanel()
         {
         }
 

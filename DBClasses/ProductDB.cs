@@ -10,7 +10,7 @@ using TravelExpertsClasses;
 namespace DBClasses
 {
     /// <summary>
-    /// ProductDB class object for the TravelExperts database 
+    /// ProductDB class object for the TravelExperts database to perform CRUD operations
     /// </summary>
     /// Author: Stuart Peters
     /// Date: March 2019

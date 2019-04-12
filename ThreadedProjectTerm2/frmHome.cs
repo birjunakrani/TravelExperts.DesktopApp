@@ -118,5 +118,10 @@ namespace ThreadedProjectTerm2
         {
             e.Graphics.DrawImage(bgHolder.Image, new Rectangle(0, 0, this.Width, this.Height), new Rectangle(bg_x, bg_y, this.Width, this.Height), GraphicsUnit.Pixel);
         }
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            UserInfoPanel.Visible = true;
+        }
     }
 }

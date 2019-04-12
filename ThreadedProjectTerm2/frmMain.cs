@@ -21,7 +21,7 @@ namespace ThreadedProjectTerm2
         ///     - loads the home page (frmHome) 
         ///     
         /// Author: Stuart Peters (parent/child form management)
-        ///         Brent (user authenticaton - code is pending here)
+        ///         
         /// </summary>
         
         //form level variables that are set when a child opens and 

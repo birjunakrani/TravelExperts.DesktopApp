@@ -44,10 +44,13 @@
             this.mainLabelText = new System.Windows.Forms.Label();
             this.mainPanelHeader = new System.Windows.Forms.Label();
             this.CopyLabel = new System.Windows.Forms.Label();
+            this.UserInfoPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bgHolder)).BeginInit();
             this.loginPanelTemp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BannerPB)).BeginInit();
             this.mainPanelTemp.SuspendLayout();
+            this.UserInfoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // bgTimer
@@ -75,6 +78,7 @@
             this.LoginBtn.TabIndex = 0;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // AdminLabel
             // 
@@ -197,11 +201,33 @@
             this.CopyLabel.TabIndex = 4;
             this.CopyLabel.Text = "© Travel Experts 2019    -   Developed by: Team 1 Corp.";
             // 
+            // UserInfoPanel
+            // 
+            this.UserInfoPanel.BackColor = System.Drawing.Color.Gray;
+            this.UserInfoPanel.Controls.Add(this.label2);
+            this.UserInfoPanel.Location = new System.Drawing.Point(950, 296);
+            this.UserInfoPanel.Name = "UserInfoPanel";
+            this.UserInfoPanel.Size = new System.Drawing.Size(355, 156);
+            this.UserInfoPanel.TabIndex = 6;
+            this.UserInfoPanel.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(19, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(324, 88);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Welcome,  Admin\r\n\r\n-Warning! Changes made to the database cannot \r\nbe reverted";
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1334, 661);
+            this.Controls.Add(this.UserInfoPanel);
             this.Controls.Add(this.CopyLabel);
             this.Controls.Add(this.mainPanelTemp);
             this.Controls.Add(this.BannerPB);
@@ -220,6 +246,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.BannerPB)).EndInit();
             this.mainPanelTemp.ResumeLayout(false);
             this.mainPanelTemp.PerformLayout();
+            this.UserInfoPanel.ResumeLayout(false);
+            this.UserInfoPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,5 +268,7 @@
         private System.Windows.Forms.Label mainLabelText;
         private System.Windows.Forms.Label mainPanelHeader;
         private System.Windows.Forms.Label CopyLabel;
+        private System.Windows.Forms.Panel UserInfoPanel;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -276,18 +276,18 @@ namespace ThreadedProjectTerm2
          **************************************************************/
 
 
-        private void lvProdSuppliers_Click(object sender, EventArgs e)
-        {
+        //private void lvProdSuppliers_Click(object sender, EventArgs e)
+        //{
 
-            ListView.SelectedListViewItemCollection psSelectedItems =
-                this.lvProdSuppliers.SelectedItems;
+        //    ListView.SelectedListViewItemCollection psSelectedItems =
+        //        this.lvProdSuppliers.SelectedItems;
 
-            foreach (ListViewItem item in psSelectedItems)
-            {
-                MessageBox.Show(item.SubItems[0].Text + " :: " + item.SubItems[1].Text);
-            }
+        //    foreach (ListViewItem item in psSelectedItems)
+        //    {
+        //        MessageBox.Show(item.SubItems[0].Text + " :: " + item.SubItems[1].Text);
+        //    }
 
-        }
+        //}
 
         //display group box to add new product supplier
         private void btnProdSupplierAdd_Click(object sender, EventArgs e)
