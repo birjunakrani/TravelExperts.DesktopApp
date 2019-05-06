@@ -9,12 +9,10 @@ using TravelExpertsClasses;
 namespace DBClasses
 {
     /**
-    * Threaded project 2 - Team 1
+    * Threaded project 2 
     * Purpose: To gather the agency table from the travel experts
     * database and load the data into a list
-    * Made by: Brent Ward
-    * Date: March 21th 2019
-    * **/
+   * **/
     public static class AgencyDB
     {
         //gets the agency table from the database

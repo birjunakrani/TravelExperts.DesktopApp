@@ -9,10 +9,8 @@ namespace TravelExpertsClasses
     public class Agency
     {
         /**
-        * Threaded project 2 - Team 1
+        * Threaded project 2 
         * Purpose: Agent object to store agent data from database
-        * Made by: Brent Ward
-        * Date: March 21th 2019
         * **/
         public Agency() { } 
 

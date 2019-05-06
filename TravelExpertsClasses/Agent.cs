@@ -9,8 +9,6 @@ namespace TravelExpertsClasses
     /**
      * Threaded project 2 - Team 1
      * Purpose: Agent object to store agent data from database
-     * Made by: Brent Ward
-     * Date: March 12th 2019
      * **/
 
     public class Agent

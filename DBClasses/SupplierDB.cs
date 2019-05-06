@@ -12,8 +12,6 @@ namespace DBClasses
      * Threaded project 2 - Team 1
      * Purpose: To gather the supplier table from the travel experts
      * database and load the data into a list
-     * Made by: Brent Ward
-     * Date: March 12th 2019
      * **/
     public static class SuppliersDB
     {

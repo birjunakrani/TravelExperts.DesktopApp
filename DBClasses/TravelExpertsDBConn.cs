@@ -10,8 +10,7 @@ namespace DBClasses
     /// <summary>
     /// Database connection for the TravelExperts database on localhost 
     /// </summary>
-    /// Author: Stuart Peters
-    /// Date: March 2019
+    
     public class TravelExpertsDBConn
     {
         public static SqlConnection getDbConnection()

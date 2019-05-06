@@ -9,8 +9,7 @@ namespace TravelExpertsClasses
     /// <summary>
     /// Product class object for the TravelExperts database 
     /// </summary>
-    /// Author: Stuart Peters
-    /// Date: March 2019
+    
     public class Product
     {
         //properties
